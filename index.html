@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #966DBD;
+}
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  margin: 10px;
+  border: solid #1A1423 3px;
+}
+.container > * {
+  display: flex;
+  flex-flow: row nowrap;
+}
+@media(max-width:1350px) {
+  img {
+    max-height: 100px;
+    max-width: 100px; 
+  }
+}
+
+@media(max-width:800px) {
+  .container {
+    display: flex;
+    max-height: 96vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+
+  .container > * {
+    flex-flow: column nowrap;
+  }
+
+  .c2, .c4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    max-height: 100px;
+    max-width: 100px; 
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<div id="txt">
+ <div class="c1"> <img id="t0"/><img id="t1"/></div>
+
+<div class="c2">  <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.colonsemicolon.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fcolon.gif&f=1" /></div>
+<div class="c3"> <img id="t2"/><img id="t3" /> </div>
+ <div class="c4"> <img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.colonsemicolon.com%2Fwp-content%2Fuploads%2F2012%2F02%2Fcolon.gif&f=1"/></div>
+<div class="c5"> <img id="t4" /><img id="t5" /></div> </div>    
+<script src="main.js"></script>
+
+</div>
+</body>
+</html>
